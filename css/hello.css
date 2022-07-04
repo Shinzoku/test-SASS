@@ -1,0 +1,94 @@
+body {
+  background-color: lightblue;
+  font-family: Helvetica, Arial, sans-sarif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+nav {
+  background-color: blue;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: green;
+  transition: ease-in-out .4s;
+  border: 2px solid green;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(0, 128, 0, 0.25);
+  color: darkgreen;
+}
+
+.card {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  background-color: #cccccc;
+  border: 1px solid black;
+}
+
+.card > img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+
+.card > *:first-child {
+  width: 150px;
+}
+
+.card > *:nth-child(0n+2) {
+  width: 150px;
+}
+
+.card > p {
+  overflow: auto;
+}
+
+.card__big {
+  display: flex;
+  width: 600px;
+  height: 400px;
+  background-color: #cccccc;
+  border: 1px solid black;
+}
+
+.card__big > img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+
+.card__big > *:first-child {
+  width: 396px;
+}
+
+.card__big > *:nth-child(0n+2) {
+  width: 204px;
+}
+
+.card__big > p {
+  overflow: auto;
+}

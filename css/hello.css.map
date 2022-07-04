@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "hello.css",
+	"sources": [
+		"../sass/hello.sass",
+		"../sass/_colors.sass"
+	],
+	"sourcesContent": [
+		"@import 'colors';\n\nbody {\n    background-color: $secondary-color; }\n\nh1 {\n    font-size: 3rem; }\n\nnav {\n    background-color: $main-color;\n\n    ul {\n        list-style: none;\n\n        li {\n            float: left;\n\n            a {\n                text-decoration: none; } } } }\n\n",
+		"$main-color: blue;\n$secondary-color: lightblue;\n"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,IAAI,CAAC;EACD,gBAAgB,ECFF,SAAS,GDEc;;AAEzC,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,IAAI,GAAG;;AAEtB,AAAA,GAAG,CAAC;EACA,gBAAgB,ECTP,IAAI,GDkB6B;EAV9C,AAGI,GAHD,CAGC,EAAE,CAAC;IACC,UAAU,EAAE,IAAI,GAMoB;IAV5C,AAMQ,GANL,CAGC,EAAE,CAGE,EAAE,CAAC;MACC,KAAK,EAAE,IAAI,GAGmB;MAV1C,AASY,GATT,CAGC,EAAE,CAGE,EAAE,CAGE,CAAC,CAAC;QACE,eAAe,EAAE,IAAI,GAAG"
+}

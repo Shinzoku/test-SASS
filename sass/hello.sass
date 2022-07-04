@@ -1,0 +1,58 @@
+@import 'colors'
+@import 'fonts'
+// écrase les variables de 'fonts'
+@import 'my_fonts'
+@import 'button'
+
+body 
+    background-color: $secondary-color
+    font-family: $secondary-font
+
+h1
+    font-size: 3rem
+    font-family: $main-font
+
+nav
+    background-color: $main-color
+
+    ul
+        list-style: none
+
+        li
+            float: left
+
+            a
+                text-decoration: none
+                color: black
+
+// @import 'button' <= à rajouter en haut
+button
+    @include my_button
+
+@mixin card($proportion: 0.5, $width: 300px)
+    display: flex
+    width: $width
+    height: $width * 2/3
+    background-color: #cccccc
+    border: 1px solid black
+
+    & > img
+        max-width: 100%
+        object-fit: cover
+        object-position: 0% 50%
+
+    
+    & > *:first-child
+        width: $width * $proportion
+
+    & > *:nth-child(0n+2)
+        width: $width * (1 - $proportion)
+
+    & > p
+        overflow: auto
+
+.card
+    @include card
+
+.card__big
+    @include card($proportion: 0.66, $width: 600px)

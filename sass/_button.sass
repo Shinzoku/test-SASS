@@ -1,0 +1,13 @@
+@mixin my_button($padding: 0.5rem 1rem, $color: green)
+    padding: $padding
+    background-color: $color
+    transition: ease-in-out .4s
+    border: 2px solid green
+    border-radius: 8px
+    color: white
+    font-size: 1rem
+    font-weight: bold
+
+    &:hover
+        background-color: rgba($color, .25)
+        color: darkgreen
